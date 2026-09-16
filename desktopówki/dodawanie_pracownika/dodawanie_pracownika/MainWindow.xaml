@@ -1,0 +1,53 @@
+﻿<Window x:Class="dodawanie_pracownika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dodawanie_pracownika"
+        mc:Ignorable="d"
+        Title="Dodaj pracownika" Height="450" Width="800" FontSize="15" Background="LightSteelBlue">
+    <Grid>
+        <StackPanel Width="800" Height="450" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal" Width="760" Height="350" Margin="20">
+                <GroupBox Header="Dane pracownika" Width="350" Margin="20,0,10,0" Padding="10, 30, 10, 10">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10, 0, 0, 20">
+                            <Label Width="100" Content="Imię" HorizontalAlignment="Left"/>
+                            <TextBox Width="150" HorizontalAlignment="Center" x:Name="txtName"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10, 0, 0, 20">
+                            <Label Width="100" Content="Nazwisko" HorizontalAlignment="Left"/>
+                            <TextBox Width="150" HorizontalAlignment="Right" x:Name="txtLastName"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="10, 0, 0, 20">
+                            <Label Width="100" Content="Stanowisko" HorizontalAlignment="Left"/>
+                            <ComboBox Width="150" Margin="0,0,0,10" x:Name="cmbPosition">
+                                <ComboBoxItem Content="Kierownik"/>
+                                <ComboBoxItem Content="Starszy programista"/>
+                                <ComboBoxItem Content="Młodszy programista"/>
+                                <ComboBoxItem Content="Tester"/>
+                            </ComboBox>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+                <GroupBox Header="Generowanie hasła" Width="350" Margin="10,0,10,0" Padding="10">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal" Margin="30, 30, 0, 20">
+                            <Label Width="100" Content="Ile znaków?"/>
+                            <TextBox Width="150" Margin="10,0,0,0" x:Name="txtPasswordLength"/>
+                        </StackPanel>
+                        <CheckBox Content="Małe i wielkie litery" Margin="30,0,0,10" x:Name="chkSmallAndCapitalLetters"/>
+                        <CheckBox Content="Cyfry" Margin="30,0,0,10" x:Name="chkNumbers"/>
+                        <CheckBox Content="Znaki specjalne" Margin="30,0,0,10" x:Name="chkSpecialCharacters"/>
+                        <Button Content="Generuj hasło" Margin="30,20,30,0" Width="100" Background="SteelBlue" Foreground="White" Click="GeneratePassword"/>
+
+                    </StackPanel>
+                </GroupBox>
+
+            </StackPanel>
+            <Button Content="Zatwierdź" Background="SteelBlue" Foreground="White" Width="200" Click="DataDisplay"/>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
