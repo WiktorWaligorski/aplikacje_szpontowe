@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="000-odcisk.jpg" />
+    <None Remove="000-zdjecie.jpg" />
+    <None Remove="src\000-odcisk.jpg" />
+    <None Remove="src\000-zdjecie.jpg" />
+    <None Remove="src\111-odcisk.jpg" />
+    <None Remove="src\111-zdjecie.jpg" />
+    <None Remove="src\333-odcisk.jpg" />
+    <None Remove="src\333-zdjecie.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="src\000-odcisk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\000-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\111-odcisk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\111-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\333-odcisk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="src\333-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
