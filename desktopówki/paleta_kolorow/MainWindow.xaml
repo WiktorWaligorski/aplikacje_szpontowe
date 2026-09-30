@@ -1,0 +1,32 @@
+﻿<Window x:Class="paleta_kolorow.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:paleta_kolorow"
+        mc:Ignorable="d"
+        Title="Wzornik kolorów RGB. Wykonał: 0000000000000" Height="450" Width="800" Background="Cornsilk">
+    <StackPanel Margin="20">
+        <Rectangle x:Name="CurrentColor" Width="600" Height="100" Fill="white" Margin="10"/>
+        <TextBlock Margin="10">Dobierz kolor suwakami i zatwierdź przyciskiem:</TextBlock>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="30">
+                <Label Width="90" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">R</Label>
+                <Slider Width="620" Minimum="0" Maximum="255" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="SliderR" ValueChanged="GetValue" IsSnapToTickEnabled="True"></Slider>
+                <Label Width="90" x:Name="ValueR" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">255</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="30">
+                <Label Width="90" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">G</Label>
+                <Slider Width="620" Minimum="0" Maximum="255" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="SliderG" ValueChanged="GetValue" IsSnapToTickEnabled="True"></Slider>
+                <Label Width="90" x:Name="ValueG" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">255</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Width="800" Height="30">
+                <Label Width="90" Height="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">B</Label>
+                <Slider  Width="620" Minimum="0" Maximum="255" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="SliderB" ValueChanged="GetValue" IsSnapToTickEnabled="True"/>
+                <Label x:Name="ValueB" Width="90"  Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">255</Label>
+            </StackPanel>
+            <Button Click="GetColor" x:Name="GetColorBtn" Background="Peru" Width="200" Height="35" Margin="0,10,0,0">Pobierz</Button>
+            <Label x:Name="ColorValues" Background="White" Width="200" Height="35" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,20,0,0">255, 255, 255</Label>
+        </StackPanel>
+    </StackPanel>
+</Window>
