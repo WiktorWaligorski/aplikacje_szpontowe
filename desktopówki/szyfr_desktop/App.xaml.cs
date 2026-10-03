@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace paleta_kolorow
+namespace szyfr_desktop
 {
     /// <summary>
     /// Interaction logic for App.xaml

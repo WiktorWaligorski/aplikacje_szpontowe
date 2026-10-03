@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.37710.0 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pesel", "pesel.csproj", "{B680FC1A-EC12-4E8A-906B-4A4DEC24C1C1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generacja_hasel", "Generacja_hasel.csproj", "{1928B3F2-7E1C-42EF-ADD3-FB8D6358B704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B680FC1A-EC12-4E8A-906B-4A4DEC24C1C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B680FC1A-EC12-4E8A-906B-4A4DEC24C1C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B680FC1A-EC12-4E8A-906B-4A4DEC24C1C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B680FC1A-EC12-4E8A-906B-4A4DEC24C1C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1928B3F2-7E1C-42EF-ADD3-FB8D6358B704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1928B3F2-7E1C-42EF-ADD3-FB8D6358B704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1928B3F2-7E1C-42EF-ADD3-FB8D6358B704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1928B3F2-7E1C-42EF-ADD3-FB8D6358B704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {59789B76-72E4-4B83-BADE-108B8A6B0136}
+		SolutionGuid = {00146A20-0E70-42E0-A6EA-6FFFD8814908}
 	EndGlobalSection
 EndGlobal
